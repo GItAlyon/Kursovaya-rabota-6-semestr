@@ -1,0 +1,584 @@
+[2026-05-07 21:31:22] SERVER_START: Server initialized
+[2026-05-07 21:31:22] SERVER_READY: Listening on port 8888
+[2026-05-07 21:31:54] SERVER_START: Server initialized
+[2026-05-07 21:31:54] SERVER_READY: Listening on port 8888
+[2026-05-07 21:35:49] SERVER_START: Server initialized
+[2026-05-07 21:35:49] SERVER_READY: Listening on port 8888
+[2026-05-07 21:37:47] SERVER_START: Server initialized
+[2026-05-07 21:37:47] SERVER_READY: Listening on port 8888
+[2026-05-07 21:39:40] SERVER_START: Server initialized
+[2026-05-07 21:39:40] SERVER_READY: Listening on port 8888
+[2026-05-07 21:41:19] SERVER_START: Server initialized
+[2026-05-07 21:41:19] SERVER_READY: Listening on port 8888
+[2026-05-07 21:42:40] SERVER_START: Server initialized
+[2026-05-07 21:42:40] SERVER_READY: Listening on port 8888
+[2026-05-07 21:45:50] SERVER_START: Server initialized
+[2026-05-07 21:45:50] SERVER_READY: Listening on port 8888
+[2026-05-07 21:46:24] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 21:46:24] USER_LOGIN: alice
+[2026-05-07 21:47:49] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 21:47:49] USER_LOGIN: bob
+[2026-05-07 21:49:10] MESSAGE_SENT: alice -> bob: privet
+[2026-05-07 21:49:27] MESSAGE_SENT: alice -> bob: Привет, Боб!
+[2026-05-07 21:51:56] SERVER_START: Server initialized
+[2026-05-07 21:51:56] SERVER_READY: Listening on port 8888
+[2026-05-07 21:52:05] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 21:52:05] USER_LOGIN: bob
+[2026-05-07 21:52:25] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 21:52:25] USER_LOGIN: alice
+[2026-05-07 21:52:52] MESSAGE_SENT: alice -> bob: Привет, Боб!
+[2026-05-07 21:53:12] MESSAGE_SENT: bob -> bob: Привет, Боб!
+[2026-05-07 21:55:46] SERVER_START: Server initialized
+[2026-05-07 21:55:46] SERVER_READY: Listening on port 8888
+[2026-05-07 21:56:04] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 21:56:04] USER_LOGIN: bob
+[2026-05-07 21:56:17] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 21:56:17] USER_LOGIN: alice
+[2026-05-07 21:56:25] MESSAGE_SENT: alice -> bob: Привет, Боб!
+[2026-05-07 21:59:17] SERVER_START: Server initialized
+[2026-05-07 21:59:17] SERVER_READY: Listening on port 8888
+[2026-05-07 21:59:34] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 21:59:34] USER_LOGIN: bob
+[2026-05-07 21:59:48] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 21:59:48] USER_LOGIN: alice
+[2026-05-07 22:00:04] MESSAGE_SENT: alice -> bob: Привет, Боб!
+[2026-05-07 22:00:04] DEBUG: Looking for user: bob
+[2026-05-07 22:00:04] DEBUG: User online: bob
+[2026-05-07 22:00:04] DEBUG: Send result: 2126
+[2026-05-07 22:00:25] MESSAGE_SENT: bob -> alice: privet!
+[2026-05-07 22:00:25] DEBUG: Looking for user: alice
+[2026-05-07 22:00:25] DEBUG: User online: bob
+[2026-05-07 22:00:25] DEBUG: User online: alice
+[2026-05-07 22:00:25] DEBUG: Send result: 2126
+[2026-05-07 22:02:32] MESSAGE_SENT: alice -> bob: priv
+[2026-05-07 22:02:32] DEBUG: Looking for user: bob
+[2026-05-07 22:02:32] DEBUG: User online: bob
+[2026-05-07 22:02:32] DEBUG: Send result: 2126
+[2026-05-07 23:08:29] SERVER_START: Server initialized
+[2026-05-07 23:08:29] SERVER_READY: Listening on port 8888
+[2026-05-07 23:08:44] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:08:44] USER_LOGIN: bob
+[2026-05-07 23:09:09] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:09:09] USER_LOGIN: alya
+[2026-05-07 23:09:23] MESSAGE_SENT: alya -> alya: priv
+[2026-05-07 23:09:23] DEBUG: Looking for user: alya
+[2026-05-07 23:09:23] DEBUG: User online: bob
+[2026-05-07 23:09:23] DEBUG: User online: alya
+[2026-05-07 23:09:23] DEBUG: Send result: 2126
+[2026-05-07 23:09:38] MESSAGE_SENT: alya -> bob: Привет!
+[2026-05-07 23:09:38] DEBUG: Looking for user: bob
+[2026-05-07 23:09:38] DEBUG: User online: bob
+[2026-05-07 23:09:38] DEBUG: Send result: 2126
+[2026-05-07 23:19:28] SERVER_START: Server initialized
+[2026-05-07 23:19:28] SERVER_READY: Listening on port 8888
+[2026-05-07 23:20:46] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:21:05] USER_LOGIN: alya
+[2026-05-07 23:21:41] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:21:44] USER_LOGIN: vika
+[2026-05-07 23:21:53] MESSAGE_SENT: alya -> vika: Privet
+[2026-05-07 23:21:53] DEBUG: Looking for user: vika
+[2026-05-07 23:21:53] DEBUG: User online: alya
+[2026-05-07 23:21:53] DEBUG: User online: vika
+[2026-05-07 23:21:53] DEBUG: Send result: 2126
+[2026-05-07 23:22:20] MESSAGE_SENT: vika -> alya: privet
+[2026-05-07 23:22:20] DEBUG: Looking for user: alya
+[2026-05-07 23:22:20] DEBUG: User online: alya
+[2026-05-07 23:22:20] DEBUG: Send result: 2126
+[2026-05-07 23:22:36] MESSAGE_SENT: alya -> vika: pr
+[2026-05-07 23:22:36] DEBUG: Looking for user: vika
+[2026-05-07 23:22:36] DEBUG: User online: alya
+[2026-05-07 23:22:36] DEBUG: User online: vika
+[2026-05-07 23:22:36] DEBUG: Send result: 2126
+[2026-05-07 23:23:05] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:23:41] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:23:54] USER_LOGIN: vika
+[2026-05-07 23:24:21] MESSAGE_SENT: vika -> alya: pr
+[2026-05-07 23:24:21] DEBUG: Looking for user: alya
+[2026-05-07 23:24:21] DEBUG: User online: alya
+[2026-05-07 23:24:21] DEBUG: Send result: 2126
+[2026-05-07 23:29:07] SERVER_START: Server initialized
+[2026-05-07 23:29:07] SERVER_READY: Listening on port 8888
+[2026-05-07 23:29:25] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:29:39] USER_LOGIN: alya
+[2026-05-07 23:29:57] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:30:00] USER_LOGIN: vika
+[2026-05-07 23:30:39] MESSAGE_SENT: alya -> vika: pribet
+[2026-05-07 23:30:39] DEBUG: Looking for user: vika
+[2026-05-07 23:30:39] DEBUG: User online: vika
+[2026-05-07 23:30:39] DEBUG: Send result: 2126
+[2026-05-07 23:30:45] MESSAGE_SENT: vika -> alya: pr
+[2026-05-07 23:30:45] DEBUG: Looking for user: alya
+[2026-05-07 23:30:45] DEBUG: User online: vika
+[2026-05-07 23:30:45] DEBUG: User online: alya
+[2026-05-07 23:30:45] DEBUG: Send result: 2126
+[2026-05-07 23:30:52] MESSAGE_SENT: alya -> vika: kak dela
+[2026-05-07 23:30:52] DEBUG: Looking for user: vika
+[2026-05-07 23:30:52] DEBUG: User online: vika
+[2026-05-07 23:30:52] DEBUG: Send result: 2126
+[2026-05-07 23:30:56] MESSAGE_SENT: vika -> alya: norm
+[2026-05-07 23:30:56] DEBUG: Looking for user: alya
+[2026-05-07 23:30:56] DEBUG: User online: vika
+[2026-05-07 23:30:56] DEBUG: User online: alya
+[2026-05-07 23:30:56] DEBUG: Send result: 2126
+[2026-05-07 23:35:29] SERVER_START: Server initialized
+[2026-05-07 23:35:29] SERVER_READY: Listening on port 8888
+[2026-05-07 23:35:45] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:35:53] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:35:55] USER_LOGIN: vika
+[2026-05-07 23:39:22] SERVER_START: Server initialized
+[2026-05-07 23:39:22] SERVER_READY: Listening on port 8888
+[2026-05-07 23:39:35] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:39:46] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:39:52] USER_LOGIN: alya
+[2026-05-07 23:40:03] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:40:06] USER_LOGIN: alya
+[2026-05-07 23:43:09] SERVER_START: Server initialized
+[2026-05-07 23:43:09] SERVER_READY: Listening on port 8888
+[2026-05-07 23:43:22] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:43:25] USER_LOGIN: alya
+[2026-05-07 23:43:38] MESSAGE_SENT: alya -> vika: ad
+[2026-05-07 23:43:38] DEBUG: Looking for user: vika
+[2026-05-07 23:43:38] DEBUG: User online: alya
+[2026-05-07 23:43:38] MESSAGE_QUEUED: alya -> vika (offline)
+[2026-05-07 23:43:52] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:43:55] USER_LOGIN: vika
+[2026-05-07 23:47:33] SERVER_START: Server initialized
+[2026-05-07 23:47:33] SERVER_READY: Listening on port 8888
+[2026-05-07 23:47:44] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:48:00] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:51:02] USER_LOGIN: alya
+[2026-05-07 23:51:04] USER_LOGIN: vika
+[2026-05-07 23:51:24] MESSAGE_SENT: alya -> vika: привет
+[2026-05-07 23:51:24] DEBUG: Looking for user: vika
+[2026-05-07 23:51:24] DEBUG: User online: alya
+[2026-05-07 23:51:24] DEBUG: User online: vika
+[2026-05-07 23:51:24] DEBUG: Send result: 2126
+[2026-05-07 23:51:46] MESSAGE_SENT: vika -> alya: как дела?
+[2026-05-07 23:51:46] DEBUG: Looking for user: alya
+[2026-05-07 23:51:46] DEBUG: User online: alya
+[2026-05-07 23:51:46] DEBUG: Send result: 2126
+[2026-05-07 23:56:35] SERVER_START: Server initialized
+[2026-05-07 23:56:35] SERVER_READY: Listening on port 8888
+[2026-05-07 23:56:58] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:57:03] NEW_CONNECTION: 127.0.0.1
+[2026-05-07 23:57:05] USER_LOGIN: alya
+[2026-05-07 23:57:07] USER_LOGIN: vika
+[2026-05-07 23:57:33] MESSAGE_SENT: alya -> vika: Привет!
+[2026-05-07 23:57:33] DEBUG: Looking for user: vika
+[2026-05-07 23:57:33] DEBUG: User online: vika
+[2026-05-07 23:57:33] DEBUG: Send result: 2126
+[2026-05-08 00:01:51] SERVER_START: Server initialized
+[2026-05-08 00:01:51] SERVER_READY: Listening on port 8888
+[2026-05-08 00:02:01] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:02:03] USER_LOGIN: alya
+[2026-05-08 00:02:24] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:02:27] USER_LOGIN: vika
+[2026-05-08 00:02:46] MESSAGE_SENT: alya -> vika: Привет!
+[2026-05-08 00:02:46] DEBUG: Looking for user: vika
+[2026-05-08 00:02:46] DEBUG: User online: vika
+[2026-05-08 00:02:46] DEBUG: Send result: 2126
+[2026-05-08 00:03:00] MESSAGE_SENT: vika -> alya: Привет
+[2026-05-08 00:03:00] DEBUG: Looking for user: alya
+[2026-05-08 00:03:00] DEBUG: User online: vika
+[2026-05-08 00:03:00] DEBUG: User online: alya
+[2026-05-08 00:03:00] DEBUG: Send result: 2126
+[2026-05-08 00:03:27] MESSAGE_SENT: alya -> vika: Как дела7
+[2026-05-08 00:03:27] DEBUG: Looking for user: vika
+[2026-05-08 00:03:27] DEBUG: User online: vika
+[2026-05-08 00:03:27] DEBUG: Send result: 2126
+[2026-05-08 00:06:20] SERVER_START: Server initialized
+[2026-05-08 00:06:20] SERVER_READY: Listening on port 8888
+[2026-05-08 00:06:33] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:06:36] USER_LOGIN: alya
+[2026-05-08 00:06:54] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:06:56] USER_LOGIN: vika
+[2026-05-08 00:07:06] MESSAGE_SENT: vika -> alya: Привет
+[2026-05-08 00:07:06] DEBUG: Looking for user: alya
+[2026-05-08 00:07:06] DEBUG: User online: alya
+[2026-05-08 00:07:06] DEBUG: Send result: 2126
+[2026-05-08 00:07:23] MESSAGE_SENT: alya -> vika: Привет.
+[2026-05-08 00:07:23] DEBUG: Looking for user: vika
+[2026-05-08 00:07:23] DEBUG: User online: alya
+[2026-05-08 00:07:23] DEBUG: User online: vika
+[2026-05-08 00:07:23] DEBUG: Send result: 2126
+[2026-05-08 00:10:08] SERVER_START: Server initialized
+[2026-05-08 00:10:08] SERVER_READY: Listening on port 8888
+[2026-05-08 00:10:27] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:10:31] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:10:36] USER_LOGIN: alya
+[2026-05-08 00:10:38] USER_LOGIN: vika
+[2026-05-08 00:10:47] MESSAGE_SENT: alya -> vika: Привет
+[2026-05-08 00:10:47] DEBUG: Looking for user: vika
+[2026-05-08 00:10:47] DEBUG: User online: alya
+[2026-05-08 00:10:47] DEBUG: User online: vika
+[2026-05-08 00:10:47] DEBUG: Send result: 2126
+[2026-05-08 00:10:52] MESSAGE_SENT: vika -> alya: Привет!
+[2026-05-08 00:10:52] DEBUG: Looking for user: alya
+[2026-05-08 00:10:52] DEBUG: User online: alya
+[2026-05-08 00:10:52] DEBUG: Send result: 2126
+[2026-05-08 00:11:03] MESSAGE_SENT: alya -> vika: Как дела?
+[2026-05-08 00:11:03] DEBUG: Looking for user: vika
+[2026-05-08 00:11:03] DEBUG: User online: alya
+[2026-05-08 00:11:03] DEBUG: User online: vika
+[2026-05-08 00:11:03] DEBUG: Send result: 2126
+[2026-05-08 00:11:32] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:11:35] USER_LOGIN: vika
+[2026-05-08 00:16:49] SERVER_START: Server initialized
+[2026-05-08 00:16:49] SERVER_READY: Listening on port 8888
+[2026-05-08 00:17:00] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:17:06] USER_LOGIN: alya
+[2026-05-08 00:17:22] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:17:24] USER_LOGIN: vika
+[2026-05-08 00:17:35] MESSAGE_SENT: vika -> alya: Привет
+[2026-05-08 00:17:35] DEBUG: Looking for user: alya
+[2026-05-08 00:17:35] DEBUG: User online: alya
+[2026-05-08 00:17:35] DEBUG: Send result: 2126
+[2026-05-08 00:18:06] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:18:08] USER_LOGIN: alya
+[2026-05-08 00:18:23] MESSAGE_SENT: alya -> vika: Привет
+[2026-05-08 00:18:23] DEBUG: Looking for user: vika
+[2026-05-08 00:18:23] DEBUG: User online: vika
+[2026-05-08 00:18:23] DEBUG: Send result: 2126
+[2026-05-08 00:18:45] MESSAGE_SENT: alya -> vika: Как дела?
+[2026-05-08 00:18:45] DEBUG: Looking for user: vika
+[2026-05-08 00:18:45] DEBUG: User online: vika
+[2026-05-08 00:18:45] DEBUG: Send result: 2126
+[2026-05-08 00:21:07] SERVER_START: Server initialized
+[2026-05-08 00:21:07] SERVER_READY: Listening on port 8888
+[2026-05-08 00:21:26] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:21:30] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:21:36] USER_LOGIN: alya
+[2026-05-08 00:21:38] USER_LOGIN: vika
+[2026-05-08 00:21:58] MESSAGE_SENT: vika -> alya: Хорошо
+[2026-05-08 00:21:58] DEBUG: Looking for user: alya
+[2026-05-08 00:21:58] DEBUG: User online: alya
+[2026-05-08 00:21:58] DEBUG: Send result: 2126
+[2026-05-08 00:22:01] MESSAGE_SENT: vika -> alya: А у тебя?
+[2026-05-08 00:22:01] DEBUG: Looking for user: alya
+[2026-05-08 00:22:01] DEBUG: User online: alya
+[2026-05-08 00:22:01] DEBUG: Send result: 2126
+[2026-05-08 00:22:11] MESSAGE_SENT: alya -> vika: Тоже всё хорошо.
+[2026-05-08 00:22:11] DEBUG: Looking for user: vika
+[2026-05-08 00:22:11] DEBUG: User online: alya
+[2026-05-08 00:22:11] DEBUG: User online: vika
+[2026-05-08 00:22:11] DEBUG: Send result: 2126
+[2026-05-08 00:22:32] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:22:36] USER_LOGIN: vika
+[2026-05-08 00:24:01] SERVER_START: Server initialized
+[2026-05-08 00:24:01] SERVER_READY: Listening on port 8888
+[2026-05-08 00:24:15] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:24:24] SERVER_START: Server initialized
+[2026-05-08 00:24:24] SERVER_READY: Listening on port 8888
+[2026-05-08 00:24:31] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:24:37] USER_LOGIN: alya
+[2026-05-08 00:26:25] SERVER_START: Server initialized
+[2026-05-08 00:26:25] SERVER_READY: Listening on port 8888
+[2026-05-08 00:26:33] SERVER_START: Server initialized
+[2026-05-08 00:26:33] SERVER_READY: Listening on port 8888
+[2026-05-08 00:26:45] SERVER_START: Server initialized
+[2026-05-08 00:26:45] SERVER_READY: Listening on port 8888
+[2026-05-08 00:26:54] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:27:00] USER_LOGIN: alya
+[2026-05-08 00:28:03] SERVER_START: Server initialized
+[2026-05-08 00:28:03] SERVER_READY: Listening on port 8888
+[2026-05-08 00:28:11] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:28:16] USER_LOGIN: alya
+[2026-05-08 00:32:15] SERVER_START: Server initialized
+[2026-05-08 00:32:15] SERVER_READY: Listening on port 8888
+[2026-05-08 00:32:27] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:32:30] USER_LOGIN: alya
+[2026-05-08 00:38:53] SERVER_START: Server initialized
+[2026-05-08 00:38:53] SERVER_READY: Listening on port 8888
+[2026-05-08 00:39:07] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:39:10] USER_LOGIN: alya
+[2026-05-08 00:40:42] NEW_CONNECTION: 127.0.0.1
+[2026-05-08 00:40:45] USER_LOGIN: vika
+[2026-05-12 16:31:40] SERVER_START: Server initialized
+[2026-05-12 16:31:40] SERVER_READY: Listening on port 8888
+[2026-05-12 16:32:05] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 16:32:13] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 16:32:22] USER_LOGIN: vika
+[2026-05-12 16:32:46] USER_LOGIN: vika
+[2026-05-12 16:33:11] MESSAGE_SENT: vika -> alya: ..
+[2026-05-12 16:33:11] DEBUG: Looking for user: alya
+[2026-05-12 16:33:11] DEBUG: User online: vika
+[2026-05-12 16:33:11] DEBUG: User online: vika
+[2026-05-12 16:33:11] MESSAGE_QUEUED: vika -> alya (offline)
+[2026-05-12 16:33:20] MESSAGE_SENT: vika -> alya: .ифсл
+[2026-05-12 16:33:20] DEBUG: Looking for user: alya
+[2026-05-12 16:33:20] DEBUG: User online: vika
+[2026-05-12 16:33:20] DEBUG: User online: vika
+[2026-05-12 16:33:20] MESSAGE_QUEUED: vika -> alya (offline)
+[2026-05-12 16:33:45] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 16:33:47] USER_LOGIN: alya
+[2026-05-12 16:34:24] MESSAGE_SENT: alya -> vika: ...
+[2026-05-12 16:34:24] DEBUG: Looking for user: vika
+[2026-05-12 16:34:24] DEBUG: User online: vika
+[2026-05-12 16:34:24] DEBUG: Send result: 2126
+[2026-05-12 18:52:52] SERVER_START: Server initialized
+[2026-05-12 18:52:52] SERVER_READY: Listening on port 8888
+[2026-05-12 18:52:56] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 18:56:13] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 18:56:16] USER_LOGIN: alya
+[2026-05-12 18:56:27] USER_LOGIN: Dima
+[2026-05-12 18:56:37] MESSAGE_SENT: Dima -> alya: Privet
+[2026-05-12 18:56:37] DEBUG: Looking for user: alya
+[2026-05-12 18:56:37] DEBUG: User online: Dima
+[2026-05-12 18:56:37] DEBUG: User online: alya
+[2026-05-12 18:56:37] DEBUG: Send result: 2126
+[2026-05-12 18:57:05] MESSAGE_SENT: alya -> Dima: Привет!
+[2026-05-12 18:57:05] DEBUG: Looking for user: Dima
+[2026-05-12 18:57:05] DEBUG: User online: Dima
+[2026-05-12 18:57:05] DEBUG: Send result: 2126
+[2026-05-12 18:57:12] MESSAGE_SENT: alya -> Dima: Privet
+[2026-05-12 18:57:12] DEBUG: Looking for user: Dima
+[2026-05-12 18:57:12] DEBUG: User online: Dima
+[2026-05-12 18:57:12] DEBUG: Send result: 2126
+[2026-05-12 19:02:05] MESSAGE_SENT: Dima -> alya: ╨┐╤А╨╕╨▓╨╡╤В!
+[2026-05-12 19:02:05] DEBUG: Looking for user: alya
+[2026-05-12 19:02:05] DEBUG: User online: Dima
+[2026-05-12 19:02:05] DEBUG: User online: alya
+[2026-05-12 19:02:05] DEBUG: Send result: 2126
+[2026-05-12 19:07:06] MESSAGE_SENT: Dima -> alya: яЁштхЄ
+[2026-05-12 19:07:06] DEBUG: Looking for user: alya
+[2026-05-12 19:07:06] DEBUG: User online: Dima
+[2026-05-12 19:07:06] MESSAGE_QUEUED: Dima -> alya (offline)
+[2026-05-12 19:07:24] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 19:07:26] USER_LOGIN: alya
+[2026-05-12 19:07:40] MESSAGE_SENT: Dima -> alya: яЁштхЄ
+[2026-05-12 19:07:40] DEBUG: Looking for user: alya
+[2026-05-12 19:07:40] DEBUG: User online: Dima
+[2026-05-12 19:07:40] DEBUG: User online: alya
+[2026-05-12 19:07:40] DEBUG: Send result: 2126
+[2026-05-12 19:07:50] MESSAGE_SENT: alya -> Dima: привет
+[2026-05-12 19:07:50] DEBUG: Looking for user: Dima
+[2026-05-12 19:07:50] DEBUG: User online: Dima
+[2026-05-12 19:07:50] DEBUG: Send result: 2126
+[2026-05-12 19:08:30] MESSAGE_SENT: Dima -> alya: ╨┐╤А╨╕╨▓╤В
+[2026-05-12 19:08:30] DEBUG: Looking for user: alya
+[2026-05-12 19:08:30] DEBUG: User online: Dima
+[2026-05-12 19:08:30] DEBUG: User online: alya
+[2026-05-12 19:08:30] DEBUG: Send result: 2126
+[2026-05-12 19:08:35] MESSAGE_SENT: alya -> Dima: приа
+[2026-05-12 19:08:35] DEBUG: Looking for user: Dima
+[2026-05-12 19:08:35] DEBUG: User online: Dima
+[2026-05-12 19:08:35] DEBUG: Send result: 2126
+[2026-05-12 19:10:51] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 19:10:53] USER_LOGIN: alya
+[2026-05-12 19:11:00] MESSAGE_SENT: alya -> Dima: ап
+[2026-05-12 19:11:00] DEBUG: Looking for user: Dima
+[2026-05-12 19:11:00] DEBUG: User online: Dima
+[2026-05-12 19:11:00] DEBUG: Send result: 2126
+[2026-05-12 19:11:02] MESSAGE_SENT: alya -> Dima: df
+[2026-05-12 19:11:02] DEBUG: Looking for user: Dima
+[2026-05-12 19:11:02] DEBUG: User online: Dima
+[2026-05-12 19:11:02] DEBUG: Send result: 2126
+[2026-05-12 19:11:08] MESSAGE_SENT: Dima -> alya: dgh
+[2026-05-12 19:11:08] DEBUG: Looking for user: alya
+[2026-05-12 19:11:08] DEBUG: User online: Dima
+[2026-05-12 19:11:08] DEBUG: User online: alya
+[2026-05-12 19:11:08] DEBUG: Send result: 2126
+[2026-05-12 19:53:04] SERVER_START: Server initialized
+[2026-05-12 19:53:04] SERVER_READY: Listening on port 8888
+[2026-05-12 19:53:21] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 19:53:30] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 19:53:34] USER_LOGIN: alya
+[2026-05-12 19:53:34] DEBUG: Undelivered count for alya: 0
+[2026-05-12 19:53:49] MESSAGE_SENT: alya -> vika: priv
+[2026-05-12 19:53:49] DEBUG: Looking for user: vika
+[2026-05-12 19:53:49] DEBUG: User online: alya
+[2026-05-12 19:53:49] MESSAGE_QUEUED: alya -> vika (offline)
+[2026-05-12 19:53:55] USER_LOGIN: vika
+[2026-05-12 19:53:55] DEBUG: Undelivered count for vika: 0
+[2026-05-12 19:55:55] SERVER_START: Server initialized
+[2026-05-12 19:55:55] SERVER_READY: Listening on port 8888
+[2026-05-12 19:56:10] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 19:56:13] USER_LOGIN: alya
+[2026-05-12 19:56:13] DEBUG: Undelivered count for alya: 0
+[2026-05-12 19:56:18] MESSAGE_SENT: alya -> vika: priv
+[2026-05-12 19:56:18] DEBUG: Looking for user: vika
+[2026-05-12 19:56:18] DEBUG: User online: alya
+[2026-05-12 19:56:18] MESSAGE_QUEUED: alya -> vika (offline)
+[2026-05-12 19:56:34] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 19:56:36] USER_LOGIN: vika
+[2026-05-12 19:56:36] DEBUG: Undelivered count for vika: 0
+[2026-05-12 19:57:57] SERVER_START: Server initialized
+[2026-05-12 19:57:57] SERVER_READY: Listening on port 8888
+[2026-05-12 19:58:10] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 19:58:13] USER_LOGIN: alya
+[2026-05-12 19:58:13] DEBUG: Undelivered count for alya: 0
+[2026-05-12 19:58:17] MESSAGE_SENT: alya -> vika: priv
+[2026-05-12 19:58:17] DEBUG: Looking for user: vika
+[2026-05-12 19:58:17] DEBUG: User online: alya
+[2026-05-12 19:58:17] MESSAGE_QUEUED: alya -> vika (offline)
+[2026-05-12 19:58:38] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 19:58:41] USER_LOGIN: vika
+[2026-05-12 19:58:41] DEBUG: Undelivered count for vika: 0
+[2026-05-12 20:21:34] SERVER_START: Server initialized
+[2026-05-12 20:21:34] SERVER_READY: Listening on port 8888
+[2026-05-12 20:21:50] SERVER_START: Server initialized
+[2026-05-12 20:21:50] SERVER_READY: Listening on port 8888
+[2026-05-12 20:29:47] SERVER_START: Server initialized
+[2026-05-12 20:29:47] SERVER_READY: Listening on port 8888
+[2026-05-12 20:30:03] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 20:30:08] USER_LOGIN: alya
+[2026-05-12 20:30:19] MESSAGE_SENT: alya -> vika: priv
+[2026-05-12 20:30:19] MESSAGE_QUEUED: alya -> vika (offline)
+[2026-05-12 20:35:01] SERVER_START: Server initialized
+[2026-05-12 20:35:01] SERVER_READY: Listening on port 8888
+[2026-05-12 20:35:10] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 20:35:16] USER_LOGIN: alya
+[2026-05-12 20:37:03] SERVER_START: Server initialized
+[2026-05-12 20:37:03] SERVER_READY: Listening on port 8888
+[2026-05-12 20:37:12] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 20:37:15] USER_LOGIN: alya
+[2026-05-12 20:37:15] DEBUG: Undelivered count for alya: 0
+[2026-05-12 20:38:36] SERVER_START: Server initialized
+[2026-05-12 20:38:36] SERVER_READY: Listening on port 8888
+[2026-05-12 20:38:57] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 20:39:06] USER_LOGIN: alya
+[2026-05-12 20:39:06] DEBUG: Undelivered count for alya: 0
+[2026-05-12 20:39:14] MESSAGE_SENT: alya -> vika: Привет
+[2026-05-12 20:39:14] MESSAGE_QUEUED: alya -> vika (offline)
+[2026-05-12 20:39:25] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 20:39:28] USER_LOGIN: vika
+[2026-05-12 20:39:28] DEBUG: Undelivered count for vika: 0
+[2026-05-12 20:58:54] SERVER_START: Server initialized
+[2026-05-12 20:58:54] SERVER_READY: Listening on port 8888
+[2026-05-12 20:59:02] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 20:59:04] USER_LOGIN: alya
+[2026-05-12 20:59:04] DEBUG: Undelivered count for alya: 0
+[2026-05-12 20:59:17] MESSAGE_SENT: alya -> vika: priv
+[2026-05-12 20:59:17] MESSAGE_SAVED_OFFLINE: alya -> vika
+[2026-05-12 21:00:05] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:00:07] USER_LOGIN: vika
+[2026-05-12 21:00:07] DEBUG: Undelivered count for vika: 0
+[2026-05-12 21:02:10] SERVER_START: Server initialized
+[2026-05-12 21:02:10] SERVER_READY: Listening on port 8888
+[2026-05-12 21:04:37] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:04:40] USER_LOGIN: alya
+[2026-05-12 21:04:40] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:04:51] MESSAGE_SENT: alya -> vika: 1
+[2026-05-12 21:04:51] MESSAGE_SAVED_OFFLINE: alya -> vika
+[2026-05-12 21:05:00] MESSAGE_SENT: alya -> vika: privet
+[2026-05-12 21:05:00] MESSAGE_SAVED_OFFLINE: alya -> vika
+[2026-05-12 21:05:19] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:05:21] USER_LOGIN: vika
+[2026-05-12 21:05:21] DEBUG: Undelivered count for vika: 0
+[2026-05-12 21:08:12] SERVER_START: Server initialized
+[2026-05-12 21:08:12] SERVER_READY: Listening on port 8888
+[2026-05-12 21:08:28] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:08:32] USER_LOGIN: alya
+[2026-05-12 21:08:32] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:08:47] SERVER_START: Server initialized
+[2026-05-12 21:08:47] SERVER_READY: Listening on port 8888
+[2026-05-12 21:08:54] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:08:56] USER_LOGIN: alya
+[2026-05-12 21:08:56] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:10:22] SERVER_START: Server initialized
+[2026-05-12 21:10:22] SERVER_READY: Listening on port 8888
+[2026-05-12 21:10:29] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:10:31] USER_LOGIN: alya
+[2026-05-12 21:10:31] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:12:13] SERVER_START: Server initialized
+[2026-05-12 21:12:13] SERVER_READY: Listening on port 8888
+[2026-05-12 21:12:52] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:12:54] USER_LOGIN: alya
+[2026-05-12 21:12:54] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:14:07] SERVER_START: Server initialized
+[2026-05-12 21:14:07] SERVER_READY: Listening on port 8888
+[2026-05-12 21:14:18] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:14:19] USER_LOGIN: alya
+[2026-05-12 21:14:19] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:14:27] MESSAGE_SENT: alya -> vika: привет
+[2026-05-12 21:14:27] MESSAGE_SAVED_OFFLINE: alya -> vika
+[2026-05-12 21:14:56] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:14:59] USER_LOGIN: alya
+[2026-05-12 21:14:59] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:15:33] SERVER_START: Server initialized
+[2026-05-12 21:15:33] SERVER_READY: Listening on port 8888
+[2026-05-12 21:15:41] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:15:43] USER_LOGIN: alya
+[2026-05-12 21:15:43] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:17:28] SERVER_START: Server initialized
+[2026-05-12 21:17:28] SERVER_READY: Listening on port 8888
+[2026-05-12 21:17:34] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:17:36] USER_LOGIN: alya
+[2026-05-12 21:17:36] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:26:37] SERVER_START: Server initialized
+[2026-05-12 21:26:37] SERVER_READY: Listening on port 8888
+[2026-05-12 21:26:44] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:26:46] USER_LOGIN: alya
+[2026-05-12 21:26:46] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:26:58] MESSAGE_SENT: alya -> vika: privet
+[2026-05-12 21:26:58] MESSAGE_SAVED_OFFLINE: alya -> vika
+[2026-05-12 21:27:13] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:27:15] USER_LOGIN: vika
+[2026-05-12 21:27:15] DEBUG: Undelivered count for vika: 0
+[2026-05-12 21:27:22] MESSAGE_SENT: alya -> vika: priv
+[2026-05-12 21:27:22] MESSAGE_DELIVERED: alya -> vika
+[2026-05-12 21:27:27] MESSAGE_SENT: vika -> alya: privet
+[2026-05-12 21:27:27] MESSAGE_DELIVERED: vika -> alya
+[2026-05-12 21:27:52] MESSAGE_SENT: alya -> vika: Как дела?
+[2026-05-12 21:27:52] MESSAGE_DELIVERED: alya -> vika
+[2026-05-12 21:28:15] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:28:16] USER_LOGIN: vika
+[2026-05-12 21:28:16] DEBUG: Undelivered count for vika: 0
+[2026-05-12 21:30:56] SERVER_START: Server initialized
+[2026-05-12 21:30:56] SERVER_READY: Listening on port 8888
+[2026-05-12 21:31:06] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:31:08] USER_LOGIN: alya
+[2026-05-12 21:31:08] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:31:26] MESSAGE_SENT: alya -> vika: .
+[2026-05-12 21:31:26] MESSAGE_SAVED_OFFLINE: alya -> vika
+[2026-05-12 21:31:35] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:31:37] USER_LOGIN: vika
+[2026-05-12 21:31:37] DEBUG: Undelivered count for vika: 0
+[2026-05-12 21:32:25] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:32:28] USER_LOGIN: vika
+[2026-05-12 21:32:28] DEBUG: Undelivered count for vika: 0
+[2026-05-12 21:35:40] SERVER_START: Server initialized
+[2026-05-12 21:35:40] SERVER_READY: Listening on port 8888
+[2026-05-12 21:35:52] SERVER_START: Server initialized
+[2026-05-12 21:35:52] SERVER_READY: Listening on port 8888
+[2026-05-12 21:35:59] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 21:36:01] USER_LOGIN: alya
+[2026-05-12 21:36:01] DEBUG: Undelivered count for alya: 0
+[2026-05-12 21:54:14] SERVER_START: Server initialized
+[2026-05-12 21:54:14] SERVER_READY: Listening on port 8888
+[2026-05-12 22:23:05] SERVER_START: Server initialized
+[2026-05-12 22:23:05] SERVER_READY: Listening on port 8888
+[2026-05-12 22:23:13] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 22:23:16] USER_LOGIN: alya
+[2026-05-12 22:23:39] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 22:23:41] USER_LOGIN: vika
+[2026-05-12 22:23:53] MESSAGE_SENT: vika -> alya: privet
+[2026-05-12 22:23:53] DEBUG: Looking for user: alya
+[2026-05-12 22:23:53] DEBUG: User online: alya
+[2026-05-12 22:23:53] DEBUG: Send result: 2126
+[2026-05-12 22:24:04] MESSAGE_SENT: alya -> vika: priv, kak dela?
+[2026-05-12 22:24:04] DEBUG: Looking for user: vika
+[2026-05-12 22:24:04] DEBUG: User online: alya
+[2026-05-12 22:24:04] DEBUG: User online: vika
+[2026-05-12 22:24:04] DEBUG: Send result: 2126
+[2026-05-12 22:24:11] MESSAGE_SENT: vika -> alya: Всё хорошо
+[2026-05-12 22:24:11] DEBUG: Looking for user: alya
+[2026-05-12 22:24:11] DEBUG: User online: alya
+[2026-05-12 22:24:11] DEBUG: Send result: 2126
+[2026-05-12 22:24:45] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 22:24:52] USER_LOGIN: alya
+[2026-05-12 22:26:38] NEW_CONNECTION: 127.0.0.1
+[2026-05-12 22:26:41] USER_LOGIN: Dima
+[2026-05-12 22:26:59] MESSAGE_SENT: Dima -> alya: privet
+[2026-05-12 22:26:59] DEBUG: Looking for user: alya
+[2026-05-12 22:26:59] DEBUG: User online: Dima
+[2026-05-12 22:26:59] DEBUG: User online: alya
+[2026-05-12 22:26:59] DEBUG: Send result: 2126
+[2026-05-12 22:27:09] MESSAGE_SENT: alya -> Dima: )
+[2026-05-12 22:27:09] DEBUG: Looking for user: Dima
+[2026-05-12 22:27:09] DEBUG: User online: Dima
+[2026-05-12 22:27:09] DEBUG: Send result: 2126
+[2026-05-15 11:21:05] SERVER_START: Server initialized
+[2026-05-15 11:21:05] SERVER_READY: Listening on port 8888
+[2026-05-15 11:21:16] NEW_CONNECTION: 127.0.0.1
+[2026-05-15 11:21:26] USER_LOGIN: alya
