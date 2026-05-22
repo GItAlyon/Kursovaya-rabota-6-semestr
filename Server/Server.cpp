@@ -110,21 +110,26 @@ public:
                 if (strlen(msg.content) == 0) break;
                 // Получаем содержимое сообщения
                 string content = msg.content;
+                string original_content;
                 // Если сообщение зашифровано - расшифровываем
                 if (msg.encrypted) {
                     Crypto crypto;
-                    vector<unsigned char> cipher(content.begin(), content.end());
-                    content = crypto.decrypt(cipher);
+                    size_t data_size = msg.seq_num;
+                    if (data_size == 0 || data_size > MAX_MESSAGE) {
+                        data_size = MAX_MESSAGE;
+                    }
+                    vector<unsigned char> cipher(msg.content, msg.content + data_size);
+                    original_content = crypto.decrypt(cipher);
+                }
+                else {
+                    original_content = msg.content;
                 }
                 // Логируем сообщение
                 g_logger.log_message(msg.from, msg.to, msg.content, true);
                 // Сохраняем в базу данных (для истории)
-                g_db->save_message(msg.from, msg.to, msg.content);
+                g_db->save_message(msg.from, msg.to, original_content);
                 // МЬЮТЕКС: защищаем доступ к списку клиентов
                 lock_guard<mutex> lock(clients_mutex);
-
-                // Отладочный вывод: кого ищем
-                //g_logger.log("DEBUG", string("Looking for user: ") + msg.to);
 
                 bool delivered = false;
                 // Перебираем всех подключённых клиентов
@@ -136,14 +141,17 @@ public:
                         forward_msg.type = MessageType::PRIVATE_MESSAGE;  // Меняем тип!
                         strcpy(forward_msg.from, msg.from);
                         strcpy(forward_msg.to, msg.to);
-                        strcpy(forward_msg.content, msg.content);
+                        // Копируем зашифрованные данные
+                        memcpy(forward_msg.content, msg.content, msg.seq_num);
+                        forward_msg.seq_num = msg.seq_num;
+                        forward_msg.encrypted = msg.encrypted;
                         forward_msg.timestamp = msg.timestamp;
                         // ОТПРАВКА ПОЛУЧАТЕЛЮ
                         int result = send(pair.first, reinterpret_cast<char*>(&forward_msg), sizeof(forward_msg), 0);
                         g_logger.log("DEBUG", string("Send result: ") + to_string(result));
                         delivered = true;
                         // Помечаем сообщение в БД как доставленное
-                        g_db->mark_message_delivered(msg.from, msg.to, msg.content);
+                        g_db->mark_message_delivered(msg.from, msg.to, original_content);
                         g_logger.log("MESSAGE_DELIVERED", string(msg.from) + " -> " + string(msg.to));
                         break;   // Выходим из цикла
                     }
