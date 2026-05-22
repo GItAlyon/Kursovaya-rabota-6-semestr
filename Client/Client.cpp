@@ -37,7 +37,7 @@ private:
     socket_t sock_fd;                    // Сокет для связи с сервером
     string username;                     // Имя текущего пользователя
     atomic<bool> is_running;             // Флаг работы программы (атомарный для потоков)
-    thread send_thread, recv_thread;                  // Потоки для приёма сообщений от сервера и отправки на него
+    thread send_thread, recv_thread;     // Потоки для приёма сообщений от сервера и отправки на него
     string current_chat_with;            // Имя текущего собеседника (с кем открыт чат)
     vector<string> chat_list;            // Список всех чатов (имена собеседников)
     map<string, vector<pair<string, string>>> message_history; // Кэш истории: ключ=имя собеседника, значение=список (отправитель, текст)
@@ -275,18 +275,24 @@ public:
             file.close();
         }
 
+        // Шифруем сообщение
+        Crypto crypto;
+        auto encrypted_data = crypto.encrypt(content);
+
         // Формируем сообщение для отправки на сервер
         Message msg;
         msg.type = MessageType::SEND_PRIVATE;
         strcpy(msg.from, username.c_str());
         strcpy(msg.to, to.c_str());
-        strcpy(msg.content, content.c_str());
-        // Шифруем сообщение
-        /*Crypto crypto;
-        auto encrypted_data = crypto.encrypt(content);
-        string encrypted_content(encrypted_data.begin(), encrypted_data.end());
-        strcpy(msg.content, encrypted_content.c_str());*/
-        msg.encrypted = 0;  // Устанавливаем флаг
+        // Копируем зашифрованные данные через memcpy (а не strcpy!)
+        // Это важно, так как в данных могут быть нулевые байты
+        size_t data_size = encrypted_data.size();
+        if (data_size > MAX_MESSAGE) data_size = MAX_MESSAGE;
+        memcpy(msg.content, encrypted_data.data(), data_size);
+
+        // Сохраняем реальную длину зашифрованных данных в поле seq_num
+        msg.seq_num = static_cast<uint32_t>(data_size);
+        msg.encrypted = 1;  // Устанавливаем флаг шифрования
 
         // Отправляем на сервер
         send(sock_fd, (char*)&msg, sizeof(msg), 0);
@@ -312,7 +318,13 @@ public:
 
                 if (msg.encrypted) {
                     Crypto crypto;
-                    vector<unsigned char> cipher(content.begin(), content.end());
+                    // Берем ровно столько байт, сколько было зашифровано (seq_num)
+                    size_t data_size = msg.seq_num;
+                    if (data_size == 0 || data_size > MAX_MESSAGE) {
+                        data_size = MAX_MESSAGE;
+                    }
+                    // Создаем вектор из данных (через указатель + длину)
+                    vector<unsigned char> cipher(msg.content, msg.content + data_size);
                     content = crypto.decrypt(cipher);
                 }
                 else {
@@ -322,7 +334,7 @@ public:
                 // Сохраняем в кэш
                 message_history[from_user].push_back({ from_user, content });
 
-                // Сохраняем сразу в файл
+                // Сохраняем в файл
                 string filename = "history_" + username + "_" + from_user + ".txt";
                 ofstream file(filename, ios::app);
                 if (file.is_open()) {
